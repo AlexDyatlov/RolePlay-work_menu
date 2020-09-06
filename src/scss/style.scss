@@ -2,6 +2,117 @@
 @import 'vars';
 @import 'global';
 
+// start works
+.works{
+  padding: 160px 0;
+}
+.works__top{
+  display: flex;
+  justify-content: space-between;
+  &-title{
+    font-size: 27px;
+    color: #ebebeb;
+  }
+  &-btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+.works__inner{
+  background-image: url('../images/background.png');
+  max-width: 2031px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+.works__items{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 2007px;
+  min-height: 1041px;
+  margin: 0 auto;
+  background-image: url('../images/works-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 70px 75px 40px 85px;
+}
+.works__item{
+  text-align: center;
+  max-width: 363px;
+  height: 420px;
+  width: 100%;
+  margin-bottom: 40px;
+  &-content{
+    min-height: 363px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 35px;
+    margin-bottom: 4px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 0;
+      // background: linear-gradient(to bottom, rgba(226,226,226,0) 0%, rgba(219,219,219,0) 6%, rgba(209,209,209,0) 51%, rgba(41,44,65,0.42) 100%);
+      // background: linear-gradient(to bottom, rgba(242,246,248,0) 0%, rgba(216,225,231,0) 16%, rgba(40,43,63,0.65) 100%);
+      background: linear-gradient(to bottom, rgba(242,246,248,0) 0%, rgba(216,225,231,0) 16%, rgba(40,43,63,0.3) 100%);
+      width: 363px;
+      height: 363px;
+    }
+    &:hover{
+      .work__lvl{
+        opacity: 1;
+      }
+      &::before{
+        background: transparent;
+      }
+    }
+    .work__lvl{
+      position: absolute;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #f4f4f4;
+      background-color: #131524;
+      border-radius: 15px;
+      padding: 2px 11px 4px;
+      opacity: 0;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  &-btn{
+    border-radius: 15px;
+    background-color: rgb(41, 44, 65);
+    border: none;
+    color: #f2f2f2;
+    font-size: 21px;
+    width: 100%;
+    padding: 13px 0 16px;
+    height: 53px;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover{
+      background-color: #03f6ff;
+      color: #232534;
+    }
+  }
+}
+.works__item-btn--active{
+  background-color: #131524;
+}
+// end works
+
 
 
 
