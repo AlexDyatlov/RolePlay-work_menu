@@ -12,7 +12,7 @@
   }
   .works__item{
     max-width: 280px;
-    height: 360px;
+    height: 340px;
     margin-bottom: 15px;
     &-content{
       min-height: 280px;
@@ -46,12 +46,12 @@
   }
   .works__item{
     max-width: 210px;
-    height: 260px;
+    height: 280px;
     margin-bottom: 0px;
     &-content{
-      min-height: 200px;
+      min-height: 210px;
       &::before{
-        height: 200px;
+        height: 210px;
         width: 210px;
       }
     }
